@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Controle de Vendas Consignadas</title>
+  <link rel="stylesheet" href="stylepro3.css"> <!-- seu CSS aqui -->
+</head>
+<body>
+
+  <header class="cabecalho">
+    <h1>Sistema de Controle de Vendas Consignadas</h1>
+    <p>Um mini ERP desenvolvido para eliminar processos manuais e aumentar a eficiência nas vendas consignadas</p>
+  </header>
+
+  <main class="container">
+
+    <section class="introducao">
+      <p>Observando a rotina de trabalho da minha mãe, percebi que os processos na empresa onde ela atua eram totalmente manuais. Ela trabalha com <strong>vendas consignadas</strong>: retira produtos do estoque da empresa, carrega no carro e distribui entre diversos clientes revendedores. Após um mês, realiza o acerto — recolhe o dinheiro, recebe os produtos que sobraram e paga 30% de comissão aos revendedores.</p>
+
+      <p>O problema é que todo esse fluxo era controlado por papéis, anotações e cálculos manuais. Só em um mês, ela lida com cerca de <strong>700 notas</strong>, o que consome muito tempo e aumenta as chances de erro.</p>
+
+      <p class="destaque">Pensando nisso, desenvolvi um <strong>sistema web (HTML, CSS e JavaScript)</strong> que funciona como um mini ERP para automatizar totalmente esse processo.</p>
+    </section>
+
+    <section class="secao">
+      <h2>Tela de Login</h2>
+      <figure class="imagem">
+        <img src="imgs3/login.png" alt="Tela de Login do Sistema">
+        <figcaption>Tela de Login</figcaption>
+      </figure>
+    </section>
+
+    <section class="secao">
+      <p>O sistema conta com <strong>três tipos de acesso</strong>, cada um com permissões e funcionalidades específicas:</p>
+    </section>
+
+    <!-- ACESSO SUPERVISOR -->
+    <section class="secao">
+      <h2>1. Acesso Supervisor (Gerente)</h2>
+      <figure class="imagem">
+        <img src="imgs3/dashboard-supervisor.png" alt="Dashboard do Supervisor">
+        <figcaption>Dashboard do Supervisor</figcaption>
+      </figure>
+
+      <p>Funcionalidades do supervisor:</p>
+      <ul>
+        <li>Ver vendas totais</li>
+        <li>Controlar vendedores</li>
+        <li>Aprovar saída de estoque para vendedores</li>
+        <li>Aprovar entrada de produtos devolvidos</li>
+        <li>Acompanhar movimentações gerais</li>
+      </ul>
+
+      <figure class="imagem">
+        <img src="imgs3/aprovacao-saida.png" alt="Tela de Aprovação de Saída de Estoque">
+        <figcaption>Tela de Aprovação de Saída de Estoque</figcaption>
+      </figure>
+
+      <figure class="imagem">
+        <img src="imgs3/aprov-entrada.png" alt="Tela de Aprovação de Entrada de Devoluções">
+        <figcaption>Tela de Aprovação de Entrada de Devoluções</figcaption>
+      </figure>
+    </section>
+
+    <!-- ACESSO VENDEDOR -->
+    <section class="secao">
+      <h2>2. Acesso Vendedor</h2>
+      <figure class="imagem">
+        <img src="imgs3/dashboard-vendedor.png" alt="Dashboard do Vendedor">
+        <figcaption>Dashboard do Vendedor</figcaption>
+      </figure>
+
+      <p>Funcionalidades do vendedor:</p>
+      <ul>
+        <li>Registrar vendas</li>
+        <li>Ver valores a receber</li>
+        <li>Solicitar retirada de estoque da empresa</li>
+        <li>Registrar devoluções</li>
+        <li>Controlar contas a receber com comissão já calculada</li>
+        <li>Cadastrar clientes revendedores</li>
+        <li>Acompanhar seu estoque do carro</li>
+      </ul>
+
+      <figure class="imagem">
+        <img src="imgs3/solicitacao-saida.png" alt="Tela de Solicitação de Saída de Estoque">
+        <figcaption>Tela de Solicitação de Saída de Estoque</figcaption>
+      </figure>
+
+      <figure class="imagem">
+        <img src="imgs3/cadastro-clientes.png" alt="Tela de Cadastro de Clientes">
+        <figcaption>Tela de Cadastro de Clientes</figcaption>
+      </figure>
+
+      <figure class="imagem">
+        <img src="imgs3/registro-vendas.png" alt="Tela de Registro de Vendas">
+        <figcaption>Tela de Vendas</figcaption>
+      </figure>
+
+      <figure class="imagem">
+        <img src="imgs3/estoque-diario.png" alt="Controle de Estoque do Carro">
+        <figcaption>Tela de Controle de Estoque do Carro</figcaption>
+      </figure>
+    </section>
+
+    <!-- ACESSO CLIENTE REVENDEDOR -->
+    <section class="secao">
+      <h2>3. Acesso Cliente Revendedor</h2>
+      <figure class="imagem">
+        <img src="imgs3/dashboard-cliente.png" alt="Dashboard do Cliente Revendedor">
+        <figcaption>Dashboard do Cliente Revendedor</figcaption>
+      </figure>
+
+      <p>Funcionalidades do cliente revendedor:</p>
+      <ul>
+        <li>Visualizar os produtos que recebeu</li>
+        <li>Consultar comissões a receber</li>
+        <li>Solicitar reposição de estoque</li>
+        <li>Acompanhar contas a pagar</li>
+      </ul>
+
+      <figure class="imagem">
+        <img src="imgs3/produtos-consignados.png
+        " alt="Produtos Consignados com o Cliente">
+        <figcaption>Tela de Produtos Consignados com o Cliente</figcaption>
+      </figure>
+
+      <figure class="imagem">
+        <img src="imgs3/reposicao.png" alt="Solicitação de Reposição">
+        <figcaption>Tela e Solicitação de Reposição</figcaption>
+      </figure>
+    </section>
+
+    <!-- FLUXO DE TRABALHO -->
+    <section class="secao">
+      <h2>Fluxo de Trabalho Automatizado</h2>
+      <ol class="fluxo">
+        <li>No início do dia, o vendedor carrega o carro com produtos da empresa.</li>
+        <li>Registra uma solicitação de saída de estoque.
+          <figure class="imagem inline">
+            <img src="imgs3/fluxo-solicitacao.png" alt="Solicitação de saída de estoque">
+          </figure>
+        </li>
+        <li>O supervisor aprova, diminuindo automaticamente o estoque da empresa e aumentando o estoque do carro.</li>
+        <li>Durante o dia, o vendedor registra vendas e devoluções.
+          <figure class="imagem inline">
+            <img src="imgs3/fluxo-vendas.png" alt="Registro de vendas e devoluções">
+          </figure>
+        </li>
+        <li>No fim do dia, descarrega o carro e registra a devolução dos itens não vendidos.
+          <figure class="imagem inline">
+            <img src="imgs3/fluxo-devolucao.png" alt="Registro de devolução">
+          </figure>
+        </li>
+        <li>O supervisor aprova a entrada e o estoque da empresa é atualizado automaticamente.</li>
+      </ol>
+    </section>
+
+    <section class="resultado-final">
+      <h2>Resultado Final</h2>
+      <p>O sistema elimina o trabalho manual, substituindo blocos de notas e cálculos repetitivos por um ambiente digital organizado, rápido e seguro.</p>
+      <p class="destaque grande">Isso reduz drasticamente o tempo gasto em atividades administrativas, permitindo que a pessoa foque no que realmente importa: <strong>vender mais e melhor</strong>.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Sistema desenvolvido para resolver um problema real do dia a dia.<br>
+    Tecnologias: HTML5 · CSS3 · JavaScript puro · 100% responsivo</p>
+  </footer>
+
+</body>
+</html>
